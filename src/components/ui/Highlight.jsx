@@ -1,0 +1,16 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const Highlight = ({ icon, title, para }) => {
+  return (
+    <div className="highlight">
+      <div className="highlight__img">
+        <FontAwesomeIcon icon={icon} />
+      </div>
+
+      <h3>{title}</h3>
+      <p className="highlight__para">{para}</p>
+    </div>
+  );
+};
+
+export default Highlight;
